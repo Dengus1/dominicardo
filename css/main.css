@@ -1,0 +1,212 @@
+body{
+    background-image: linear-gradient(to top, #1d5702, #104d1d), url('../img/2024-03-04_21.38.46.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+
+
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 8vh;
+    padding: 20px;
+
+}
+
+
+ul {
+    list-style-type: none;
+    display: flex;
+    width: 45%;
+    justify-content: space-around;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: normal;
+    position: relative;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+
+
+a:hover {
+    background-color: rgba(0, 0, 0, 0.541);
+    transition: .3s ease-in-out;
+    
+}
+
+
+/* burger */
+
+ .burger {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: none;
+}
+
+.line {
+    width: 3em;
+    height: .3em;
+    background: #ffffff;
+    margin: .7em;
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+}
+
+/* main */
+
+.tytul h1{
+    position: absolute;
+    font-size: 60px;
+    top: 30%;
+    left: 10%;
+    color: white;
+    text-align: center;
+}
+
+.tytul img {
+    animation: bounce-in-right 2s ease-in-out;
+    position: absolute;
+    height: 550px;
+    top: 20%;
+    left: 55%;
+    border-radius: 25% 10%;
+}
+
+.wiki-btn  {
+    position: absolute;
+    top: 55%;
+    left: 20%;
+}
+.wiki-btn a:hover {
+    background-color: transparent;
+    border-radius: 0;
+}
+.wiki-btn a {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0;
+}
+
+.wiki-btn button {
+    background-image: linear-gradient(to bottom, #34a500, #00c02a);
+    border: #104d1d 5px;
+    border-radius: 16px;
+    height: 60px;
+    width: 200px;
+}
+.wiki-btn button:hover {
+    background-image: linear-gradient(to top, #34a500, #00c02a);
+    transition: .3s ease-in-out;
+}
+
+
+/* animation */
+
+@keyframes bounce-in-right {
+    0% {
+      opacity: 0;
+      transform: translateX(2000px);
+    }
+    60% {
+      opacity: 1;
+      transform: translateX(-30px);
+    }
+    80% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+  }
+
+
+/* footer */
+
+.footer {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 150vh;
+    width: auto;
+    min-height: 250px;
+    background-image: linear-gradient(to top, #000000, #00000046), url('../img/2024-03-04_21.38.46.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer-element-title {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer-element-opis:not(:hover),
+.footer-element-opis {
+    transition: 0.5s;
+    font-size: 14px;
+    padding-top: 3px;;
+    line-height: 130%;
+    color: grey;
+}
+
+.footer-element-opis{
+    color: white;
+}
+
+.footer-element {
+    display: table-cell;
+    padding: 40px;
+    max-width: 300px;
+    float: right;
+    
+}
+
+.footer-image {
+    width: 100px;
+    height: auto;
+    border-radius: 16px;
+
+}
+
+.copyright-container {
+    display: table-cell;
+    padding: 10px;
+    max-width: 300px;
+    position: relative;
+    float: left;
+    top: 40px;
+}
+
+.copyright-text {
+    color: grey;
+}
+
+.footer-element-opis a:not(:hover),
+.footer-element-opis a{
+    font-weight: normal;
+    border-radius: 0;
+    background-color: transparent;
+    transition: 0.5s;
+    text-decoration: none;
+    color: grey;
+    font-size: 14px;
+    padding-top: 3px;
+    height: 130%;
+    
+}
+.footer-element-opis a:hover {
+    color: white;
+}
