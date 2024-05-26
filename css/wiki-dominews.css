@@ -221,7 +221,7 @@ a:hover {
         transform: rotate(405deg) translateY(-10px);
     }
 
-   nav ul {
+    nav ul {
         position: absolute;
         right: 0;
         top: 10vh;
@@ -236,7 +236,7 @@ a:hover {
         border-radius: 16px;
     }
 
-   nav ul.active {
+    nav ul.active {
         transform: translate(0%);
     }
 
@@ -345,20 +345,20 @@ a:hover {
 
     .tytul h1{
         position: absolute;
-        font-size: 15px;
+        font-size: 13px;
         top: 25%;
-        left: auto;
+        left: 5%;
         color: white;
         text-align: right; /*tekt do np. prawej, center środek */
     }
     
     .tytul span {
-        font-size: 10px;
+        font-size: 8px;
     }
     
     .wiki img {
         position: absolute;
-        height: 250px;
+        height: 200px;
         top: 15%;
         left: 45%; /* jeśli chczesz obraz po prawej zmień left: 80%; na right: 80%; */
         border-radius: 25% 10%;
@@ -374,7 +374,7 @@ a:hover {
         width: auto;
     }
 
-   nav ul {
+    nav ul {
         position: absolute;
         right: 0;
         top: 10vh;

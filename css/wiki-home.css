@@ -1,0 +1,554 @@
+body{
+    background-image: linear-gradient(to top, #1d5702, #104d1d);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+
+
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 8vh;
+    padding: 20px;
+
+}
+
+
+ul {
+    list-style-type: none;
+    display: flex;
+    width: 45%;
+    justify-content: space-around;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: normal;
+    position: relative;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+
+
+a:hover {
+    background-color: rgba(0, 0, 0, 0.541);
+    transition: .3s ease-in-out;
+    
+}
+
+
+/* burger */
+
+ .burger {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: none;
+}
+
+.line {
+    width: 3em;
+    height: .3em;
+    background: #ffffff;
+    margin: .7em;
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+}
+
+/* main */
+
+.tytul h1{
+    position: absolute;
+    font-size: 60px;
+    top: 20%;
+    left: 32%;
+    color: white;
+    text-align: center;
+}
+
+.wiki-wyszukaj{
+    width: 600px;
+    background: #fff;
+    margin: 200px auto 0;
+    border-radius: 5px;
+}
+.row {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    
+}
+
+.wiki-wyszukaj input{
+    flex: 1;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: 0;
+    font-size: 18px;
+}
+
+.wiki-btn button .fa-solid {
+    color:  #34a500;
+    font-size: 28px;
+}
+.wiki-btn button {
+    background: transparent;
+    border: none;
+}
+.wiki-btn button .fa-solid:hover {
+    color: #00c02a;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.wynik-box ul {
+    border-top: 1px solid #00c02a;
+    padding: 15px 10px;
+}
+.wynik-box ul {
+    list-style: none;
+    border-radius: 3px;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+.wynik-box a {
+    background: none;
+    color: #000000;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    cursor: pointer;
+}
+.wynik-box ul a:hover {
+    background-color: #00c02a4b;
+}
+
+.wynik-box {
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+/* animation */
+
+@keyframes bounce-in-right {
+    0% {
+      opacity: 0;
+      transform: translateX(2000px);
+    }
+    60% {
+      opacity: 1;
+      transform: translateX(-30px);
+    }
+    80% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+  }
+
+
+/* footer */
+
+.footer {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 150vh;
+    width: auto;
+    min-height: 250px;
+    background-image: linear-gradient(to top, #000000, #00000046);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer-element-title {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer-element-opis:not(:hover),
+.footer-element-opis {
+    transition: 0.5s;
+    font-size: 14px;
+    padding-top: 3px;;
+    line-height: 130%;
+    color: grey;
+}
+
+.footer-element-opis{
+    color: white;
+}
+
+.footer-element {
+    display: table-cell;
+    padding: 40px;
+    max-width: 300px;
+    float: right;
+    
+}
+
+.footer-image {
+    width: 100px;
+    height: auto;
+    border-radius: 16px;
+
+}
+
+.copyright-container {
+    display: table-cell;
+    padding: 10px;
+    max-width: 300px;
+    position: relative;
+    float: left;
+    top: 40px;
+}
+
+.copyright-text {
+    color: grey;
+}
+
+.footer-element-opis a:not(:hover),
+.footer-element-opis a{
+    font-weight: normal;
+    border-radius: 0;
+    background-color: transparent;
+    transition: 0.5s;
+    text-decoration: none;
+    color: grey;
+    font-size: 14px;
+    padding-top: 3px;
+    height: 130%;
+    
+}
+.footer-element-opis a:hover {
+    color: white;
+}
+
+
+@media only screen and (max-width: 1000px){
+    nav {
+        justify-content: right;
+    }
+
+    .burger {
+        display: block;
+        transition: .3s ease-in-out;
+    }
+
+    .burger.active .line:first-child {
+        transform: translateY(-300px);
+    }
+
+    .burger.burger.active .line:nth-child(2){
+        transform: rotate(-405deg) translateY(8px);
+    }
+    .burger.burger.active .line:nth-child(3){
+        transform: rotate(405deg) translateY(-10px);
+    }
+
+   nav ul {
+        position: absolute;
+        right: 0;
+        top: 10vh;
+        background-color: #00000093; 
+        height: 138vh;
+        width: 20%;
+        flex-direction: column;
+        text-align: center;
+        transform: translate(100%);
+        transition: .3s ease-in-out;
+        z-index: 2;
+        border-radius: 16px;
+    }
+
+   nav ul.active {
+        transform: translate(0%);
+    }
+
+    a {
+        font-size: 1.5rem;
+    }
+
+    .tytul h1{
+        position: absolute;
+        font-size: 60px;
+        top: 20%;
+        left: 15%;
+        color: white;
+        text-align: center;
+    }
+    
+    .wiki-wyszukaj{
+        width: 600px;
+        background: #fff;
+        margin: 200px auto 0;
+        border-radius: 5px;
+    }
+    .row {
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        
+    }
+    
+    .wiki-wyszukaj input{
+        flex: 1;
+        height: 50px;
+        background: transparent;
+        border: none;
+        outline: 0;
+        font-size: 18px;
+    }
+    
+    .wiki-btn button .fa-solid {
+        color:  #34a500;
+        font-size: 28px;
+    }
+    .wiki-btn button {
+        background: transparent;
+        border: none;
+    }
+    .wiki-btn button .fa-solid:hover {
+        color: #00c02a;
+        transition: .3s ease-in-out;
+        cursor: pointer;
+    }
+    
+    .wynik-box ul {
+        border-top: 1px solid #00c02a;
+        padding: 15px 10px;
+    }
+    .wynik-box ul {
+        list-style: none;
+        border-radius: 3px;
+        padding: 15px 10px;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+    
+    .wynik-box a {
+        background: none;
+        color: #000000;
+        padding: 15px 10px;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        cursor: pointer;
+    }
+    .wynik-box ul a:hover {
+        background-color: #00c02a4b;
+    }
+    
+    .wynik-box {
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .tytul h1{
+        position: absolute;
+        font-size: 30px;
+        top: 20%;
+        left: 5%;
+        color: white;
+        text-align: center;
+    }
+    
+    .wiki-wyszukaj{
+        width: 350px;
+        background: #fff;
+        margin: 200px auto 0;
+        border-radius: 5px;
+    }
+    .row {
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        
+    }
+    
+    .wiki-wyszukaj input{
+        flex: 1;
+        height: 50px;
+        background: transparent;
+        border: none;
+        outline: 0;
+        font-size: 18px;
+    }
+    
+    .wiki-btn button .fa-solid {
+        color:  #34a500;
+        font-size: 28px;
+    }
+    .wiki-btn button {
+        background: transparent;
+        border: none;
+    }
+    .wiki-btn button .fa-solid:hover {
+        color: #00c02a;
+        transition: .3s ease-in-out;
+        cursor: pointer;
+    }
+    
+    .wynik-box ul {
+        border-top: 1px solid #00c02a;
+        padding: 15px 10px;
+    }
+    .wynik-box ul {
+        list-style: none;
+        border-radius: 3px;
+        padding: 15px 10px;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+    
+    .wynik-box a {
+        background: none;
+        color: #000000;
+        padding: 15px 10px;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        cursor: pointer;
+    }
+    .wynik-box ul a:hover {
+        background-color: #00c02a4b;
+    }
+    
+    .wynik-box {
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+
+    nav ul {
+        position: absolute;
+        right: 0;
+        top: 10vh;
+        background-color: #00000093; 
+        height: 138vh;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        transform: translate(100%);
+        transition: .3s ease-in-out;
+        z-index: 2;
+        border-radius: 16px;
+    }
+
+}
+
+@media only screen and (max-width: 390px){
+    .tytul h1{
+        position: absolute;
+        font-size: 30px;
+        top: 25%;
+        left: 5%;
+        color: white;
+        text-align: center;
+    }
+    
+    .wiki-wyszukaj{
+        width: 350px;
+        background: #fff;
+        margin: 200px auto 0;
+        border-radius: 5px;
+    }
+    .row {
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        
+    }
+    
+    .wiki-wyszukaj input{
+        flex: 1;
+        height: 50px;
+        background: transparent;
+        border: none;
+        outline: 0;
+        font-size: 18px;
+    }
+    
+    .wiki-btn button .fa-solid {
+        color:  #34a500;
+        font-size: 28px;
+    }
+    .wiki-btn button {
+        background: transparent;
+        border: none;
+    }
+    .wiki-btn button .fa-solid:hover {
+        color: #00c02a;
+        transition: .3s ease-in-out;
+        cursor: pointer;
+    }
+    
+    .wynik-box ul {
+        border-top: 1px solid #00c02a;
+        padding: 15px 10px;
+    }
+    .wynik-box ul {
+        list-style: none;
+        border-radius: 3px;
+        padding: 15px 10px;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+    
+    .wynik-box a {
+        background: none;
+        color: #000000;
+        padding: 15px 10px;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        cursor: pointer;
+    }
+    .wynik-box ul a:hover {
+        background-color: #00c02a4b;
+    }
+    
+    .wynik-box {
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+
+    nav ul {
+        position: absolute;
+        right: 0;
+        top: 10vh;
+        background-color: #00000093; 
+        height: 138vh;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        transform: translate(100%);
+        transition: .3s ease-in-out;
+        z-index: 2;
+        border-radius: 16px;
+    }
+
+   nav ul.active {
+        transform: translate(0%);
+    }
+}

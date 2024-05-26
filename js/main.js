@@ -1,4 +1,4 @@
-const mobileNav = document.querySelector('ul');
+const mobileNav = document.querySelector('nav ul');
 const burgerIcon = document.querySelector('.burger');
 
 burgerIcon.addEventListener('click', function(){

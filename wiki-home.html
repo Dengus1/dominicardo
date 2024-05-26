@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dominicardo</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/wiki-home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="shortcut icon" href="img/ikonka.png">
@@ -24,11 +24,24 @@
             <div class="line"></div>
         </button>
     </nav>
-<div class="tytul">
-    <img src="img/IMG_2575.jpg">
-    <h1>Streamer oraz <br> Twórca Internetowy</h1>
-    <div class="wiki-btn">
-        <button><a href="wiki-home.html">WIĘCEJ O MNIE</a></button>
+<div class="wiki">
+    <div class="tytul">
+    <h1>STRONA GŁÓWNA WIKI</h1>
+    </div>
+    <div class="wiki-wyszukaj">
+        <div class="row">
+            <input type="text" id="input-box" placeholder="Przekuaj wiki"
+            autocomplete="off">
+            <div class="wiki-btn">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+        <div class="wynik-box" class="row">
+            <ul>
+                <a href="wiki-dominews.html">DOMINEWS</a>
+                <a href="wiki-template.html">WIKI-TEMPLATE</a>
+            </ul>
+        </div>
     </div>
 </div>
 <div class="footer">
@@ -71,5 +84,6 @@
         </div>
 </div>
 <script src="js/main.js"></script>
+<script src="js/autocomplete.js"></script>
 </body>
 </html>

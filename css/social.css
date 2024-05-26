@@ -229,7 +229,7 @@ a:hover {
         transform: rotate(405deg) translateY(-10px);
     }
 
-    ul {
+   nav ul {
         position: absolute;
         right: 0;
         top: 10vh;
@@ -244,7 +244,7 @@ a:hover {
         border-radius: 16px;
     }
 
-    ul.active {
+   nav ul.active {
         transform: translate(0%);
     }
 
@@ -289,7 +289,7 @@ a:hover {
         left: 22%;
     }
 
-    ul {
+   nav ul {
         position: absolute;
         right: 0;
         top: 10vh;
@@ -324,7 +324,7 @@ a:hover {
         left: 25%;
     }
 
-    ul {
+    nav ul {
         position: absolute;
         right: 0;
         top: 10vh;
